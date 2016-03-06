@@ -1,12 +1,12 @@
 {
   "name": "doom-wad",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Read data out of a DOOM WAD",
   "main": "index.js",
   "author": "Nik Coughlin <nrkn.com@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "nlump": "^0.2.2",
+    "nlump": "^0.2.3",
     "nwad": "^0.1.1"
   },
   "repository": {
