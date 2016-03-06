@@ -234,29 +234,10 @@ const toObj = buffer => {
   //must be called last or it catches things it shouldn't due to sloppy prefix matching
   const ui = getUi( wad, indexOf, processed )
   
-  /*
-  const debug = {
-    lumpCount: wad.lumps.length,
-  }
-  */
-  
   const obj = {
     type, colorMap, demos, dmxgus, dmxgusc, endoom, flats, genMidi, maps, music, 
     palettes, patches, sounds, sprites, textures, ui
-    //,debug
   }
-  
-  /*
-  obj.debug.unprocessedCount = processed.reduce( 
-    ( sum, isP ) => 
-      isP ? sum : sum + 1,
-    0 
-  )
-  
-  obj.debug.unprocessed = wad.lumps
-    .map( lump => lump.name )
-    .filter( ( lump, i ) => !processed[ i ] )
-  */
   
   return obj
 }
